@@ -24,6 +24,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                             password_confirmation: "password" }
     end
     assert_template 'users/show'
-    assert_not flash.nil?
+    assert_not_nil flash
   end
 end
